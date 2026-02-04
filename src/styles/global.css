@@ -1,0 +1,38 @@
+/* styles.css */
+@import "tailwindcss";
+
+/* 🎨 Brand theme */
+@theme {
+  /* Primary dark */
+  --color-brand-dark: #15171D;
+  --color-brand-dark-soft: #1b1e26;
+  --color-brand-dark-80: rgba(21, 23, 29, 0.8);
+  --color-brand-dark-60: rgba(21, 23, 29, 0.6);
+
+  /* Primary accent (orange) */
+  --color-brand-orange: #D45113;
+  --color-brand-orange-65: rgba(212, 81, 19, 0.65);
+  --color-brand-orange-45: rgba(212, 81, 19, 0.45);
+
+  /* Secondary accent (amber) */
+  --color-brand-amber: #F9A03F;
+  --color-brand-amber-65: rgba(249, 160, 63, 0.65);
+  --color-brand-amber-45: rgba(249, 160, 63, 0.45);
+
+  /* Success / positive */
+  --color-brand-green: #4D8B31;
+  --color-brand-green-65: rgba(77, 139, 49, 0.65);
+  --color-brand-green-45: rgba(77, 139, 49, 0.45);
+
+  /* Neutrals */
+  --color-brand-white: #FFFFFF;
+  --color-brand-black: #000000;
+}
+
+/* 🌍 Global styles */
+body {
+  background-color: var(--color-brand-dark);
+  color: var(--color-brand-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
