@@ -1,38 +1,64 @@
-/* styles.css */
+/* index.css */
 @import "tailwindcss";
 
-/* 🎨 Brand theme */
 @theme {
-  /* Primary dark */
+  /* 🎨 Brand Palette */
   --color-brand-dark: #15171D;
   --color-brand-dark-soft: #1b1e26;
   --color-brand-dark-80: rgba(21, 23, 29, 0.8);
   --color-brand-dark-60: rgba(21, 23, 29, 0.6);
 
-  /* Primary accent (orange) */
   --color-brand-orange: #D45113;
   --color-brand-orange-65: rgba(212, 81, 19, 0.65);
   --color-brand-orange-45: rgba(212, 81, 19, 0.45);
 
-  /* Secondary accent (amber) */
   --color-brand-amber: #F9A03F;
   --color-brand-amber-65: rgba(249, 160, 63, 0.65);
   --color-brand-amber-45: rgba(249, 160, 63, 0.45);
 
-  /* Success / positive */
   --color-brand-green: #4D8B31;
   --color-brand-green-65: rgba(77, 139, 49, 0.65);
   --color-brand-green-45: rgba(77, 139, 49, 0.45);
 
-  /* Neutrals */
   --color-brand-white: #FFFFFF;
   --color-brand-black: #000000;
+
+  /* ✨ Custom Utilities */
+  --animate-blob: blob 7s infinite;
+  
+  @keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+  }
 }
 
-/* 🌍 Global styles */
+/* 🌍 Global Reset */
 body {
   background-color: var(--color-brand-dark);
   color: var(--color-brand-white);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif; /* Asegúrate de tener una fuente sans */
+  overflow-x: hidden;
+}
+
+/* Clases utilitarias para Glassmorphism rápido */
+.glass-panel {
+  background: var(--color-brand-dark-80);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: linear-gradient(145deg, rgba(27, 30, 38, 0.6) 0%, rgba(21, 23, 29, 0.4) 100%);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: var(--color-brand-orange-45);
+  box-shadow: 0 0 20px rgba(212, 81, 19, 0.15);
+  transform: translateY(-5px);
 }
