@@ -9,7 +9,7 @@ import Services from './components/Services';
 
 const Home = () => {
   return (
-    <div className="min-h-screen relative selection:bg-brand-orange selection:text-brand-white">
+    <div className="bg-[var(--color-brand-dark)] min-h-screen w-full">
 
       {/* --- COMPONENTS --- */}
       <Navbar />
