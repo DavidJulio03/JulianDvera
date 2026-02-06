@@ -64,6 +64,8 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10 md:mb-12">
             <a 
               href={content.primaryUrl}
+              target='_blank'
+              rel="noopener noreferrer"
               className="h-14 md:h-16 px-8 md:px-10 bg-[var(--color-brand-orange)] text-white rounded-full font-bold text-base md:text-lg hover:shadow-[0_0_30px_-5px_var(--color-brand-orange)] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
             >
               <Zap fill="currentColor" size={18} />
