@@ -51,7 +51,7 @@ const Footer = () => {
 
           {/* Lado Derecho: Fiverr Badge Sutil */}
           <a 
-            href="YOUR_FIVERR_URL" 
+            href="https://www.fiverr.com/juliandvera" 
             target="_blank" 
             className="group flex items-center gap-2 text-xs font-bold text-white/60 hover:text-white transition-colors"
           >
